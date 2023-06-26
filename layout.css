@@ -1,0 +1,173 @@
+/*
+Layout style guide:
+- Element modifiers shown first
+- Class modifiers shown second and in vertical order of document appearance
+
+Potential page width options
+960px;
+768px;
+720px;
+680px;
+640px;
+*/
+
+/* Element modifiers */
+html * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+h1 {
+    border: 2px solid black;
+    padding: 5px 0px 15px 10px;
+}
+
+
+/* Class modifiers */
+
+/* Header div - set max width of header*/
+.header-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 768px;
+    margin: auto;
+    gap: 5px;
+}
+
+/* Header image and sign in div */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+    align-items: center;
+}
+
+/* Header logo */
+.header-logo {
+    width: 125px;
+}
+
+/* Sign in link */
+.sign-in {
+    text-decoration: none;
+}
+
+/* Header nav menu */
+.nav-top {
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 7px 0;
+}
+
+.top-link {
+    text-decoration: none;
+    color: black;
+}
+
+.top-link:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+}
+
+/* Body div - set max width of body */
+.body-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    gap: 5px;
+    margin-bottom: 0.67em;
+}
+
+/* Post author / socials div */
+.author-socials {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.author {
+    text-decoration: none;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+/* Main post image width */
+.main-image {
+    width: 600px;
+}
+
+/* Additional posts div */
+.post-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 0px 10px 10px 10px;
+}
+
+
+/* Footer div - set max width of footer*/
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 720px;
+    margin: auto;
+}
+
+.footer-logo {
+    width: 125px;
+}
+
+/* Footer menu div */
+.nav-bottom {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Style all font awesome icons */
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+/* Add a hover effect */
+.fa:hover {
+opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-share {
+background-color:darkcyan;
+color: white;
+}
